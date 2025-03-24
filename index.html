@@ -8,13 +8,12 @@
 <script>
 
     function test(){
-        document.body.append(Android.getdate("flag"))
+        document.body.outerHTML = (Android.getdate("flag").split("||"))
         console.log("test")
     }
 
     window.onload = test
     
 </script>
-<body>
-</body>
+<body></body>
 </html>
