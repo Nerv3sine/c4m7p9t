@@ -6,7 +6,9 @@
     <title>Document</title>
     <script>
     
-        document.getElementById("f").innerHTML = Android.getdate("flag")
+        window.onload = () => {
+            document.getElementById("f").innerHTML = Android.getdate("flag")
+        }
         
     </script>
     <script src="./test.js"></script>
