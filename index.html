@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-    
-        window.onload = () => {
-            document.append(Android.test())
+
+        function test(){
+            document.getElementById("flag").append(Android.test())
+            console.log("test")
         }
+    
+        window.onload = test()
         
     </script>
-    <script src="./test.js"></script>
 </head>
 <body>
-    <p id="fl"></p>
+    <span id="flag"></span>
 </body>
 </html>
